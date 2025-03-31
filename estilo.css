@@ -1,0 +1,806 @@
+
+/* MENU */
+.navbar{
+  background-color: #f7f3ed;
+}
+.navbar-nav .nav-link {
+  color: #000000; /* Color original */
+  transition: color 0.3s ease; /* Transición suave */
+  font-family: 'Roboto', sans-serif;
+}
+.navbar-nav .nav-link:hover {
+  color: #db5c01; /* Color al pasar el mouse (ajústalo a tu gusto) */
+}
+.custom-font {
+    font-size: 1.25rem; /* O cualquier tamaño que prefieras */
+} 
+
+/* MAIN*/
+main {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 40vh; /* Ajusta la altura como necesites */
+  background-image: url('imagen/techo_aislacion.jpg'); /* Cambia por la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Hace que la imagen se mueva al hacer scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.overlay-text {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 65%; /* Lo mueve hacia el centro */
+  transform: translateY(-50%); /* Lo ajusta para que quede realmente centrado */
+}
+.overlay-text2 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 80%; /* Lo mueve hacia el centro */
+  transform: translateY(-50%); /* Lo ajusta para que quede realmente centrado */
+}
+
+/* SECTION */
+section{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; 
+}
+h1, h2{
+  text-align: center;
+}
+
+/*FOOTER*/
+footer .menu-footer, footer .logo-footer, footer .contacto-footer {
+  flex: 1; /* Hace que los divs tomen el mismo espacio */
+}
+.menu-footer a {
+color: #000000; /* Color original */
+text-decoration: none; /* Sin subrayado */
+transition: color 0.3s ease; /* Transición suave */
+}
+.menu-footer a:hover {
+color: #db5c01; /* Color al pasar el mouse */
+}
+.contacto-footer a {
+color: #000000; /* Color original */
+text-decoration: none; /* Sin subrayado */
+font-size: 30px; /* Tamaño del texto */
+transition: color 0.3s ease; /* Transición suave */
+}
+.contacto-footer a:hover {
+color: #db5c01; /* Color al pasar el mouse */
+}
+footer {
+display: flex;
+flex-wrap: wrap; /* Permite que los elementos bajen a la siguiente línea */
+justify-content: space-between; /* Espacio entre los div */
+align-items: center; /* Alineación vertical */
+padding: 10px; /* Espaciado interior si lo necesitas */
+background-color: #f7f3ed;
+font-family: 'Roboto', sans-serif;
+}
+
+/*INICIO*/
+.titulo_inicio{
+
+    opacity: 0;
+    transform: translateY(-200px);
+    animation: caer 1s ease-out forwards;
+    color: #db5c01;
+}
+@keyframes caer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.presentacion {
+  text-align: justify;
+  margin: 0 auto;
+  width: 80%; /* Ajusta el tamaño según lo que desees */
+  padding: 0 200px;
+  line-height: 1.5;
+}
+
+/*video*/
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre el video y el texto */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en otra línea si no hay espacio */
+}
+
+.contenido1_video {
+  flex: 1;
+}
+
+.parrafoInicio {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 0 50px;
+}
+
+#iframeVideo {
+  flex: 1;
+  max-width: 100%;
+  height: 315px;
+}
+
+/*Como trabajamos*/
+.como-trabajamos {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos */
+  align-items: center; /* Alineación vertical */
+  gap: 40px; /* Espaciado entre los divs */
+  flex-wrap: wrap; /* Para que sea responsivo */
+  padding: 30px 100px;
+}
+.icono {
+  transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.icono:hover {
+  transform: scale(1.2); /* Aumenta el tamaño del icono al 120% */
+}
+.como-trabajamos div {
+  flex: 1; /* Para que los divs ocupen el mismo espacio */
+  text-align: center;
+  padding: 20px;
+}
+
+/*SERVICIOS*/
+/*Presentacion servicios*/ 
+.presentacionServicio {
+  display: flex;
+  align-items: center; /* Alinea arriba la imagen y el texto */
+  gap: 0px; /* Reducimos el espacio */
+  margin: 0 400px;
+}
+
+.presentacionServicio .imagenServicio {
+  flex: 0 0 40%; /* La imagen ocupará un 40% */
+}
+.imagenServicio {
+  animation: flotar 3s ease-in-out infinite;
+  box-shadow: 0 0 5px 2px #818181; /* Difuminado verde */
+}
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.presentacionServicio .textoServicio {
+  flex: 1;
+  text-align: justify;
+  background-color: #9cc94d;
+  padding: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: white;
+}
+.presentacionServicio .textoServicio2 {
+  flex: 1;
+  text-align: justify;
+  background-color: #9cc94d;
+  padding: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  color: white;
+}
+
+.presentacionServicio .textoServicio h2 {
+  margin-top: 0;
+  text-align: left; /* Evita que quede centrado */
+  margin-bottom: 10px;
+  background-color: #9cc94d;
+}
+
+.presentacionServicio .imagenServicio img {
+  width: 100%; /* Ocupa todo el contenedor de la imagen */
+  height: auto;
+  border-radius: 8px; /* opcional */
+}
+
+/*banner servicio*/
+.bannerServicio {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 40vh; /* Ajusta la altura como necesites */
+  background-image: url('imagen/banner.png'); /* Cambia por la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Hace que la imagen se mueva al hacer scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.overlay-text3 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 50%; /* Lo mueve hacia el centro */
+  transform: translateY(-50%); /* Lo ajusta para que quede realmente centrado */
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+/*beneficios*/
+.contenedorBeneficio{
+  background-image: url('imagen/textura_fondo.jpg');
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.casa {
+  flex-shrink: 0;
+}
+.botoncito {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textoSimbolo {
+  visibility: hidden;
+  width: 150px;
+  background-color: #9cc94d;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.textoSimbolo2 {
+  visibility: hidden;
+  width: 150px;
+  background-color: #9cc94d;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 130%; /* Aparece a la derecha */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.botoncito:hover .textoSimbolo,
+.botoncito:hover .textoSimbolo2 {
+  visibility: visible;
+  opacity: 1;
+}
+.simbolo {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.simbolo:hover {
+  transform: scale(1.2);
+}
+/*Metodos de aplicacion*/
+/* Contenedor principal centrado */
+.cards-container {
+  display: flex; /* Usa flexbox */
+  flex-wrap: wrap; /* Permite que se acomoden en varias filas si no caben */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  gap: 20px; /* Espacio entre tarjetas */
+  padding: 20px;
+}
+/* Estilo de las tarjetas */
+.card {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 5px 2px #818181; /* Difuminado verde */
+}
+/* Contenedor circular del video */
+.video-container1 {
+  width: 200px; /* Aumenta el tamaño del círculo */
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+  border: 6px solid #99dd22;
+  position: relative; /* Necesario para centrar el gif escalado */
+  transition: 0.5s ;
+}
+.video-container1:hover {
+  width: 300px; /* Aumenta el tamaño del círculo */
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+  border: 6px solid #99dd22;
+  position: relative; /* Necesario para centrar el gif escalado */
+  transition: 1s ;
+}
+
+/* GIF dentro del círculo */
+.video-container1 img {
+  width: 100%; /* Duplica el tamaño */
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el GIF dentro del círculo */
+}
+
+/* PREGUNTAS FRECUENTES */
+.accordion {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+.accordion-item input {
+  display: none;
+}
+.accordion-title {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  position: relative; /* Importante para la flecha */
+  display: flex;
+  justify-content: space-between; /* Distribuye el texto y la flecha */
+  align-items: center; /* Alinea verticalmente */
+}
+.accordion-title::after {
+  content: "+"; /* Flecha hacia abajo */
+  color:#db5c01 ;
+  font-size: 25px;
+  transition: transform 0.5s ease;
+}
+label{
+  color: black;
+}
+/* Cuando el acordeón está abierto, rota la flecha */
+.accordion-item input:checked + .accordion-title::after {
+  transform: rotate(180deg); /* Flecha hacia arriba */
+  content: "-";
+  font-size: 40px;
+}
+.accordion-content {
+  display: none;
+  padding: 10px;
+  font-size: 16px;
+  background: #fff;
+  color: #557025;
+}
+.accordion-item input:checked + .accordion-title + .accordion-content {
+  display: block;
+}
+
+/*CONTACTO*/
+.sectionContacto {
+  padding-top: 40PX;
+}
+.Contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px; /* Limita el ancho del formulario */
+  margin: 20px auto; /* Lo centra en la pantalla */
+  padding: 20px;
+  background-image: url(imagen/textura_fondo.jpg);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #698b2e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #9cc94d;
+}
+.contactoUno, .contactoDos {
+  width: 49%; /* Para que ambos divs estén alineados en desktop */
+}
+
+.contenido_contactoDos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; /* Ajusta el espacio */
+  margin: 30px;
+}
+.contenido_contactoDos p {
+  display: flex;
+  align-items: center;
+  margin: 0; /* Asegura que no tenga márgenes extra */
+}
+.contenido_contactoDos svg {
+  flex-shrink: 0; /* Evita que los íconos desaparezcan */
+}
+
+/*Boton cotizazacion*/
+.boton-Cotizacion {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.boton-cotizar {
+  background-color: #daa112;
+  color: white;
+  padding: 12px 24px;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid transparent;
+}
+/* Borde brillante animado alrededor del botón */
+.boton-cotizar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  animation: bordeBrillante 1s infinite alternate ease-in-out;
+  pointer-events: none;
+}
+/* Cambio de color al pasar el mouse */
+.boton-cotizar:hover {
+  background-color: #db5c01;
+  transform: scale(1.05);
+}
+/* Animación para que el borde se desvanezca y reaparezca */
+@keyframes bordeBrillante {
+  0% {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);
+    opacity: 0.3;
+  }
+  100% {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0);
+    opacity: 1;
+  }
+}
+
+
+/*DESCRUBIR DE DONDE ES*/
+.icono1{
+  transition: transform 0.3s ease, fill 0.3s ease;
+  fill: #e6007e;
+}
+.icono1:hover{
+  transform: scale(1.2);
+        fill: #c4006a;
+}
+.icono2{
+  transition: transform 0.3s ease, fill 0.3s ease;
+  fill: #233fbe;
+}
+.icono2:hover{
+  transform: scale(1.2);
+        fill: #13087c;
+}
+
+/* BOTON WSPP */
+.whatsapp-boton{
+    position: fixed;
+    bottom: 80px;
+    z-index: 1000;
+    border-radius: 50%;
+    padding: 13px;
+    background-color: #25D366; /*  Verde de WhatsApp */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    right: 20px;
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 160px;
+    z-index: 1000;
+    border-radius: 50%;
+    padding: 13px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    right: 20px;
+  }
+  /* Efecto al pasar el ratón sobre los botones */
+  .whatsapp-boton:hover {
+    background-color: #159215; /* WhatsApp hover color */
+  }
+  .back-to-top:hover {
+    background-color: #e8ebe1; /* WhatsApp hover color */
+  }
+  
+  /* Estilo de la sección para que haya suficiente contenido para hacer scroll */
+  .contenido-section {
+    padding: 40px;
+    height: 1500px; /* Añadido para tener scroll */
+  }
+
+/*MEDIA QUERY para pantallas pequeñas */
+@media (max-width: 600px) {
+  form {
+      width: 100%; /* Hace que el formulario ocupe casi toda la pantalla */
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContacto {
+    flex-direction: column; /* Apila los elementos */
+    align-items: center; /* Centra los elementos en el eje horizontal */
+  }
+
+  .contactoUno, .contactoDos {
+    width: 100%; /* Ocuparán todo el ancho */
+    max-width: 500px; /* Opcional, para que no sean demasiado anchos */
+    text-align: center; /* Centra el contenido de los divs */
+  }
+
+  footer {
+    flex-direction: column; /* Hace que los elementos se apilen */
+    text-align: center; /* Centra el texto e iconos */
+  }
+
+  footer .menu-footer, 
+  footer .logo-footer, 
+  footer .contacto-footer {
+    width: 100%; /* Cada elemento ocupa el ancho completo */
+    margin-bottom: 10px; /* Espacio entre elementos */
+  }
+
+  footer .logo-footer img {
+    max-width: 250px; /* Ajusta el tamaño del logo */
+    height: 150px;
+    margin: 0 auto; /* Centra el logo */
+    display: block; /* Evita problemas con alineación */
+    padding-top: 20px;
+  }
+
+  .info-item button {
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+    padding: 8px 16px; /* Ajusta el tamaño del botón */
+  }
+  .info-item {
+    flex-direction: column; /* Cambia a disposición vertical */
+    align-items: center; /* Centra los elementos */
+  }
+
+
+  .cards-container {
+    grid-template-columns: 1fr; /* Se vuelve 1 sola columna */
+    gap: 15px;
+}
+
+.video-container {
+    max-width: 120px; /* Reduce el tamaño del video */
+}
+.overlay-text {
+  font-size: clamp(30px, 4vw, 24px); /* Se ajusta dinámicamente */
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 65%; /* Lo mueve hacia el centro */
+  transform: translateY(-50%); /* Lo ajusta para que quede realmente centrado */
+  overflow-wrap: break-word;
+}
+.overlay-text2 {
+  font-size: clamp(18px, 4vw, 24px); /* Se ajusta dinámicamente */
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 80%; /* Lo mueve hacia el centro */
+  transform: translateY(-50%); /* Lo ajusta para que quede realmente centrado */
+  overflow-wrap: break-word;
+}
+h3 {
+    font-size: 0.5rem;
+}
+h1 {
+  overflow-wrap: break-word;
+}
+p {
+    font-size: 0.9rem;
+    overflow-wrap: break-word;
+}
+/*beneficios*/
+.contenedor {
+  flex-direction: column;
+  align-items: center;
+}
+
+.columna {
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.textoSimbolo, .textoSimbolo2 {
+right: auto;
+left: 50%;
+top: auto;
+bottom: 110%;
+transform: translateX(-50%);
+white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+}
+}
+
+
+@media (max-width: 480px) {
+  .info-item button {
+    font-size: 0.4rem; /* Aún más pequeño en móviles */
+    padding: 6px 12px;
+  }
+}
+
+/*presentacion servicios*/
+@media (max-width: 1200px) {
+  .presentacionServicio {
+    margin: 0 100px;
+  }
+}
+@media (max-width: 768px) {
+  .presentacionServicio {
+    flex-direction: column;
+    margin: 0 20px;
+    gap: 20px;
+  }
+
+  .presentacionServicio .textoServicio {
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  .presentacionServicio {
+    padding: 10px;
+  }
+
+  .presentacionServicio .textoServicio {
+    padding: 15px;
+  }
+}
+/*Banner*/
+@media (max-width: 768px) {
+  .overlay-text3 {
+    font-size: 2.5rem; /* Reduce el tamaño del texto en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text3 {
+    font-size: 1rem; /* Aumenta el tamaño del texto en pantallas muy pequeñas */
+  }
+}
+/*inicio*/
+@media screen and (max-width: 768px) {
+  .presentacion {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .parrafoInicio {
+    padding: 0 20px;
+  }
+
+  .video-container {
+    max-width: 1000px;
+    padding: 20px;
+  }
+  
+  .contenido1_video {
+    flex: 1;
+  }
+  
+  .parrafoInicio {
+    padding: 0 50px;
+  }
+  
+  #iframeVideo {
+    flex: 1;
+    max-width: 100%;
+    height: 315px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .casa img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Para centrar la imagen */
+  }
+  .overlay-text3 {
+    font-size: 8vw; /* Ajusta el tamaño para móviles */
+  }
+  .h2_contenido_video{
+    padding-top: 20px;
+  }
+}
