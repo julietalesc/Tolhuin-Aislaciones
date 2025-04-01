@@ -1,0 +1,69 @@
+Aislaciones Tolhuin - Sitio Web
+
+Este es el repositorio oficial del sitio web de Aislaciones Tolhuin, una empresa de Santa Cruz, especializada en aislamiento térmico con celulosa y madera de lenga para muebles y casas prefabricadas.
+
+🛠️ Tecnologías utilizadas
+
+HTML5
+
+CSS3
+
+JavaScript (si aplica)
+
+Diseño responsivo
+
+📌 Estructura del sitio
+
+Encabezado (Header): Contiene el logo y un menú de navegación adaptable a móviles.
+
+Cuerpo principal:
+
+Botón flotante de WhatsApp en la esquina inferior derecha.
+
+Botón de 'volver arriba' sobre el botón de WhatsApp.
+
+Pie de página (Footer):
+
+Derechos reservados en el centro.
+
+Menú de enlaces a la izquierda.
+
+Logo de la empresa en el centro.
+
+Iconos de contacto (Instagram, Facebook, correo y WhatsApp) a la derecha.
+
+📄 Secciones del sitio
+
+Inicio
+
+Servicios
+
+Preguntas Frecuentes
+
+Contacto
+
+🚀 Cómo ejecutar el proyecto
+
+Clona el repositorio con el siguiente comando:
+
+git clone https://github.com/tu-usuario/aislaciones-tolhuin.git
+
+Abre el archivo index.html en tu navegador o utiliza un servidor local para visualizarlo correctamente.
+
+🌍 Hosting
+
+El sitio estará disponible una vez publicado en el servidor.
+
+📬 Contacto
+
+Para consultas o sugerencias, puedes comunicarte con nosotros a través de:
+
+🌐 Sitio web oficial
+
+📧 Correo: contacto@aislacionestolhuin.com
+
+📱 WhatsApp: +54 9 XXXX XXXX
+
+✏️ Autor:  Julieta Lescano
+📅 Última actualización: Abril 2025
+
